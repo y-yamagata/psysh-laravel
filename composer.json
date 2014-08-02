@@ -1,0 +1,26 @@
+{
+    "name": "y-yamagata/laravel-psysh",
+    "description": "add psysh command.",
+    "keywords": ["laravel", "psysh"],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "y-yamagata",
+            "email": "yamagata@astrsk.jp"
+        }
+    ],
+    "require": {
+        "php": ">=5.4.0",
+        "laravel/framework": "4.2.*",
+        "psy/psysh": "0.1.*"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "~4.0"
+    },
+    "autoload": {
+        "psr-0": {
+            "YYamagata\\LaravelPsysh\\": "src/"
+        }
+    },
+    "minimum-stability": "stable"
+}
