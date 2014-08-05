@@ -55,17 +55,6 @@ class LaravelConfiguration extends Configuration {
         $this->doAddContributors();
     }
 
-    public function getLoop()
-    {
-        $loop = parent::getLoop();
-        if ($loop instanceof ForkingLoop) {
-            $loop = new LaravelLoop($this);
-            $this->setLoop($loop);
-        }
-
-        return $loop;
-    }
-
     public function setComplementer($complementer)
     {
         if ($complementer && !$complementer instanceof ComplementerInterface) {

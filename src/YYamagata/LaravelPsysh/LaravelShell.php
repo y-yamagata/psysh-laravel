@@ -48,13 +48,5 @@ class LaravelShell extends Shell {
         );
     }
 
-    public function handleShutdown()
-    {
-        $error = error_get_last();
-        if ($error['type'] === E_ERROR) {
-            $this->afterLoop();
-        }
-    }
-
 }
 
