@@ -1,4 +1,4 @@
-<?php namespace YYamagata\LaravelPsysh\Presenters;
+<?php namespace YYamagata\PsyshLaravel\Presenters;
 
 use Psy\Presenter\ObjectPresenter;
 use Illuminate\Database\Eloquent\Model;

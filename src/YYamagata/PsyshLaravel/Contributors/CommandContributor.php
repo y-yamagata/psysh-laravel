@@ -1,4 +1,4 @@
-<?php namespace YYamagata\LaravelPsysh\Contributors;
+<?php namespace YYamagata\PsyshLaravel\Contributors;
 
 use Symfony\Component\Console\Application;
 

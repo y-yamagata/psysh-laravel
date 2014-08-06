@@ -1,6 +1,6 @@
-<?php namespace YYamagata\LaravelPsysh\Complementers;
+<?php namespace YYamagata\PsyshLaravel\Complementers;
 
-use YYamagata\LaravelPsysh\Contributors\ContributorInterface;
+use YYamagata\PsyshLaravel\Contributors\ContributorInterface;
 
 class Complementer implements ComplementerInterface {
 

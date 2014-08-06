@@ -1,9 +1,9 @@
-<?php namespace YYamagata\LaravelPsysh;
+<?php namespace YYamagata\PsyshLaravel;
 
 use Illuminate\Support\ServiceProvider;
-use YYamagata\LaravelPsysh\Console\PsyshCommand;
+use YYamagata\PsyshLaravel\Console\PsyshCommand;
 
-class LaravelPsyshServiceProvider extends ServiceProvider {
+class PsyshLaravelServiceProvider extends ServiceProvider {
 
 	/**
 	 * Indicates if loading of the provider is deferred.
@@ -19,7 +19,7 @@ class LaravelPsyshServiceProvider extends ServiceProvider {
 	 */
 	public function boot()
 	{
-		$this->package('y-yamagata/laravel-psysh');
+		$this->package('y-yamagata/psysh-laravel');
 	}
 
 	/**
@@ -29,11 +29,11 @@ class LaravelPsyshServiceProvider extends ServiceProvider {
 	 */
 	public function register()
 	{
-        $this->app->bindShared('command.laravel-psysh', function($app)
+        $this->app->bindShared('command.psysh-laravel', function($app)
         {
             return new PsyshCommand($app);
         });
-        $this->commands('command.laravel-psysh');
+        $this->commands('command.psysh-laravel');
 	}
 
 	/**
@@ -43,7 +43,7 @@ class LaravelPsyshServiceProvider extends ServiceProvider {
 	 */
 	public function provides()
 	{
-		return array('command.laravel-psysh');
+		return array('command.psysh-laravel');
 	}
 
 }

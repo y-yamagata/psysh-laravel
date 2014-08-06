@@ -1,4 +1,4 @@
-laravel-psysh
+psysh-laravel
 =============
 
-laravel-psysh
+psysh-laravel

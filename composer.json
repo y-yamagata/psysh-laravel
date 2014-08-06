@@ -1,5 +1,5 @@
 {
-    "name": "y-yamagata/laravel-psysh",
+    "name": "y-yamagata/psysh-laravel",
     "description": "add psysh command.",
     "keywords": ["laravel", "psysh"],
     "license": "MIT",
@@ -19,7 +19,7 @@
     },
     "autoload": {
         "psr-0": {
-            "YYamagata\\LaravelPsysh\\": "src/"
+            "YYamagata\\PsyshLaravel\\": "src/"
         }
     },
     "minimum-stability": "stable"

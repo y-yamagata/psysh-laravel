@@ -1,14 +1,14 @@
-<?php namespace YYamagata\LaravelPsysh\Console;
+<?php namespace YYamagata\PsyshLaravel\Console;
 
 use Illuminate\Console\Command;
 use Symfony\Component\Console\Input\InputOption;
 use Symfony\Component\Console\Input\InputArgument;
-use YYamagata\LaravelPsysh\LaravelShell;
-use YYamagata\LaravelPsysh\LaravelConfiguration;
-use YYamagata\LaravelPsysh\Presenters\EloquentPresenter;
-use YYamagata\LaravelPsysh\Contributors\EloquentContributor;
-use YYamagata\LaravelPsysh\Contributors\CommandContributor;
-use YYamagata\LaravelPsysh\Contributors\ModelContributor;
+use YYamagata\PsyshLaravel\LaravelShell;
+use YYamagata\PsyshLaravel\LaravelConfiguration;
+use YYamagata\PsyshLaravel\Presenters\EloquentPresenter;
+use YYamagata\PsyshLaravel\Contributors\EloquentContributor;
+use YYamagata\PsyshLaravel\Contributors\CommandContributor;
+use YYamagata\PsyshLaravel\Contributors\ModelContributor;
 
 class PsyshCommand extends Command {
 
@@ -42,7 +42,7 @@ class PsyshCommand extends Command {
     /**
      * Shell.
      *
-     * @var YYamagata\LaravelPsysh\LaravelShell
+     * @var YYamagata\PsyshLaravel\LaravelShell
      */
     protected $shell;
 
@@ -70,7 +70,7 @@ class PsyshCommand extends Command {
 		parent::__construct();
 
         $this->app = $app;
-        $this->config = $app['config']['laravel-psysh::config'];
+        $this->config = $app['config']['psysh-laravel::config'];
 	}
 
 	/**

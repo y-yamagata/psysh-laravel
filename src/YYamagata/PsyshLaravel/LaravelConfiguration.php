@@ -1,12 +1,12 @@
-<?php namespace YYamagata\LaravelPsysh;
+<?php namespace YYamagata\PsyshLaravel;
 
 use Psy\Shell;
 use Psy\Configuration;
 use Psy\ExecutionLoop\ForkingLoop;
-use YYamagata\LaravelPsysh\Complementers\ComplementerInterface;
-use YYamagata\LaravelPsysh\Complementers\Complementer;
-use YYamagata\LaravelPsysh\Complementers\DummyComplementer;
-use YYamagata\LaravelPsysh\ExecutionLoop\LaravelLoop;
+use YYamagata\PsyshLaravel\Complementers\ComplementerInterface;
+use YYamagata\PsyshLaravel\Complementers\Complementer;
+use YYamagata\PsyshLaravel\Complementers\DummyComplementer;
+use YYamagata\PsyshLaravel\ExecutionLoop\LaravelLoop;
 
 class LaravelConfiguration extends Configuration {
 

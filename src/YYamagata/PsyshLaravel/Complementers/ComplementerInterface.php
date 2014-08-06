@@ -1,4 +1,4 @@
-<?php namespace YYamagata\LaravelPsysh\Complementers;
+<?php namespace YYamagata\PsyshLaravel\Complementers;
 
 interface ComplementerInterface {
 

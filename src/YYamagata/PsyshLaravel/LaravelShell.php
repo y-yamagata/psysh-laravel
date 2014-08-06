@@ -1,11 +1,11 @@
-<?php namespace YYamagata\LaravelPsysh;
+<?php namespace YYamagata\PsyshLaravel;
 
 use Psy\Shell;
 use Psy\ExecutionLoop\ForkingLoop;
 use Symfony\Component\Console\Input\InputInterface;
 use Symfony\Component\Console\Output\OutputInterface;
 use Illuminate\Foundation\Application;
-use YYamagata\LaravelPsysh\Contributors\FunctionContributor;
+use YYamagata\PsyshLaravel\Contributors\FunctionContributor;
 
 class LaravelShell extends Shell {
 
