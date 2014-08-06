@@ -91,7 +91,7 @@ class PsyshCommand extends Command {
         $configuration = new LaravelConfiguration($this->config['configuration']);
         $configuration->addPresenters($this->presenters());
 
-        $this->shell = new LaravelShell($configuration);
+        $this->shell = new LaravelShell($configuration, $this->app);
         $this->shell->setIncludes($this->argument('include'));
         $this->shell->addCommands($this->commands());
         $this->shell->addContributors($this->contributors());
