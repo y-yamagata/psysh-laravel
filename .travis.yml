@@ -11,3 +11,10 @@ before_script:
   - composer install --prefer-source --no-interaction --dev
 
 script: phpunit
+
+notifications:
+  emails:
+    - yamagata@astrsk.jp
+  on_success: always
+  on_failure: always
+
